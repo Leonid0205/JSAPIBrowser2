@@ -18,9 +18,8 @@ dotsNav.addEventListener('click', function (e) {
 
     const targetIndex = dots.findIndex(dot => dot === targetDot);
     
-    console.log(dots);
-    console.log(targetIndex);
     renderSlide();
+    
     dots.forEach((dot, index, dots) => {
         if (index === targetIndex) {
             dots[index].classList.add('active');
